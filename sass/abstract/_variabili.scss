@@ -1,0 +1,16 @@
+// variabili mie, originali o sovrascriventi
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$coloreSfondo: #7e41db;
+$coloreSfondoSecondario:  rgb(234, 229, 229);
+$bottoneVerde: #50ea90;
+$originalFont: "Inter', sans-serif";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+)

@@ -1,0 +1,57 @@
+@import "abstract/variabili";
+@import "abstract/mixins";
+@import "bootstrap/bootstrap.scss";
+
+body{
+    font-family: $originalFont;
+}
+#avatar{
+    @include avatar
+}
+#hero{
+    @include contorniSezioni;
+    background-color: $coloreSfondo;
+    text-align: start;
+
+    div{
+        margin-bottom: 2em;
+    }
+
+    p{
+      color: rgba(200, 198, 196, 0.852);
+    }
+    img{
+        max-width: 100%;
+    };
+    button{
+        @include buttons;
+    }
+    h1{
+        @include principalHeading
+    }
+}
+
+.list-group svg{
+    @include icons;
+}
+
+#card{
+    @include contorniSezioni;
+    background-color:$coloreSfondoSecondario;
+
+    h2{
+        @include secondaryHeading;
+    }
+}
+
+footer{
+    background-color: $coloreSfondoSecondario;
+
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    li{
+        list-style: none;
+    }
+}
